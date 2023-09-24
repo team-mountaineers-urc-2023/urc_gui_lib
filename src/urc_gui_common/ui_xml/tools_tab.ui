@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Tools</class>
+ <widget class="QWidget" name="Tools">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>879</width>
+    <height>590</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <item>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="1" column="0">
+      <widget class="AntennaControlWidget" name="antenna_control" native="true"/>
+     </item>
+     <item row="0" column="0">
+      <widget class="TimerWidget" name="timer" native="true"/>
+     </item>
+     <item row="2" column="0">
+      <widget class="RosConsoleWidget" name="ros_console" native="true"/>
+     </item>
+     <item row="0" column="1" rowspan="3">
+      <widget class="ChecklistWidget" name="checklist" native="true"/>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>TimerWidget</class>
+   <extends>QWidget</extends>
+   <header>urc_gui_common.widgets.timer</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>ChecklistWidget</class>
+   <extends>QWidget</extends>
+   <header>urc_gui_common.widgets.checklist</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>AntennaControlWidget</class>
+   <extends>QWidget</extends>
+   <header>urc_gui_common.widgets.antenna_control</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>RosConsoleWidget</class>
+   <extends>QWidget</extends>
+   <header>urc_gui_common.widgets.ros_console</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
